@@ -1,4 +1,4 @@
-# Coldstart
+# Spelunker
 
 Spelunker is a tool that will parse through your codebase and generate automated mocks 
 
@@ -6,6 +6,8 @@ Spelunker is a tool that will parse through your codebase and generate automated
 - Autogenerates a 'test' folder if one does not exist
 
 - Skips over functions that have 'spelunker_skip' above the definition
+
+- Generates individual test files with corresponding test methods
 
 - Generates a code coverage report within the terminal upon completion
 
@@ -22,7 +24,7 @@ $ python3 --version # returns 'Python 3.7.7' or a version >= 'Python 3.6'
 Run in terminal from the file (I will eventually publish this project up to pip for install/run directly)
 
 ```zsh
-$ python3 src/Spelunker.py
+$ python3 [PATH TO SPELUNKER DIR]/src/Spelunker.py
 ```
 
 ## Contact Info
