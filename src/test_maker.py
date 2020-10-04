@@ -11,10 +11,17 @@ def destination_matcher(current_dir):
 
 def file_maker(file, files):
 	filename = 'test_' + file + '.py'
-	with open(filename, 'a') as fp: 
+	with open(filename, 'w') as fp: 
 		for method in files[file]:
-			fp.write('test_' + method)
-			fp.write('\n')
+			method = method[:-1]
+			fp.write('import unittest\nfrom mock import patch\n')
+			fp.write('from ' + file + ' import ' + method + '\n\n')
+			fp.write('class test_' + file + '(unittest.TestCase):\n\n')
+			fp.write('@patch("requests.get")\n')
+			fp.write('test_' + method + 'mock_get):\n')
+			fp.write('\t' + method + '\n\n')
+			fp.write('\t\tself.assertTrue(mock_put.called)\n')
+			fp.write('\t\tself.assertEqual(' + method + '), 200)\n')
 
 def test_generator(test_dir, files):
 	os.chdir(test_dir)
