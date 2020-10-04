@@ -19,7 +19,7 @@ def file_maker(file, files):
 			fp.write('class test_' + file + '(unittest.TestCase):\n\n')
 			fp.write('@patch("requests.get")\n')
 			fp.write('test_' + method + 'mock_get):\n')
-			fp.write('\t' + method + '\n\n')
+			fp.write('\t' + method + ')\n\n')
 			fp.write('\t\tself.assertTrue(mock_put.called)\n')
 			fp.write('\t\tself.assertEqual(' + method + '), 200)\n')
 

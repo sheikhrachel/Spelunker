@@ -1,15 +1,16 @@
 # Spelunker
 
-Spelunker is a tool that will parse through your codebase and automatically generate mocks in a test folder for you
+Spelunker is a tool that will parse through your codebase and automatically generate mocks in a test folder
 
 ## Features
 - Autogenerates a 'test' folder if one does not exist
 
 - Skips over functions that have 'spelunker_skip' above the definition
 
-- Generates individual test files with corresponding test methods
+- Generates individual mock files with corresponding test methods (currently only supporting the requests library)
 
-- Generates a code coverage report within the terminal upon completion
+![alt text](img/demo_file.png "Input File")
+![alt text](img/demo_output.png "Output File")
 
 ## Prerequisites
 
