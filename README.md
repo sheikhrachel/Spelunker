@@ -2,6 +2,8 @@
 
 Spelunker is a tool that will parse through your codebase and automatically generate mocks in a test folder
 
+![alt text](img/logo.png "Logo")
+
 ## Features
 - Autogenerates a 'test' folder if one does not exist
 
