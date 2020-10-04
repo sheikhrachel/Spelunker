@@ -12,7 +12,7 @@ Spelunker is a tool that will parse through your codebase and automatically gene
 - Generates individual mock files with corresponding test methods (currently only supporting the requests library)
 
 ![alt text](img/demo_file.png "Input File")
-![alt text](img/demo_output.png "Output File")
+![alt text](img/demo_output2.png "Output File")
 
 ## Prerequisites
 
